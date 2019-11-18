@@ -18,7 +18,7 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-server.use( cors() );
+// server.use( cors() );
 
 app.get('/location', (request, response) => {
     // send the users current location back to them
