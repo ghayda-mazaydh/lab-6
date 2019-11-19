@@ -62,10 +62,10 @@ app.get('/location', (request, response) => {
 
 
   // When an error happens ...
-server.use('*', (request, response) =>{
+app.use('*', (request, response) =>{
     response.status(404).send('Not Found');
   });
   
-  server.use( (error, request, response) => {
+  app.use( (error, request, response) => {
     response.status(500).send(error);
   });
